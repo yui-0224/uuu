@@ -1,6 +1,6 @@
 >>> import skyfield.api
 # TLEを読み込む
->>> sats = skyfield.api.load.tle_file("https://celestrak.org/NORAD/elements/gnss.txt", reload=True)
+>>> sats = skyfield.api.load.tle_file("http://celestrak.org/NORAD/elements/gp.php?GROUP=last-30-days&FORMAT=tle", reload=True)
 # 衛星が何個含まれているか？
 >>> len(sats)
 156
